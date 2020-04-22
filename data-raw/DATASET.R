@@ -1,11 +1,15 @@
 #---------------------------
-# Code to update NY Times Datasets
+# Code to update VirginiaC19 Datasets
 #---------------------------
 
 setwd(here::here())
-source("./R/refresh_YOURPACKAGENAME.R")
+source("./R/refresh_VirginiaC19.R")
+source("./R/utils.R")
 
-YOURPACKAGENAME_demo <- refresh_YOURPACKAGENAME()
+VirginiaC19_cases <- refresh_YOURPACKAGENAME()
+VirginiaC19_sex <- refresh_YOURPACKAGENAME()
+VirginiaC19_race <- refresh_YOURPACKAGENAME()
+VirginiaC19_AgeGroup <- refresh_YOURPACKAGENAME()
 
 #check it
 head(YOURPACKAGENAME_demo)
