@@ -1,18 +1,18 @@
-#' Demo of WHAT IS THIS DATA
+#' Demo of VirginiaC19 cases data.
 #'
-#' @description demo of the TELL US ABOUT THIS DATA IN BRIEF
+#' @description daily summary of Virginia Coronavirus (COVID-19) cases. 
 #'
 #'
 #' @format A tibble object
-#' @source WHAT IS YOUR SOURCE
-#' @keywords datasets coronavirus COVID19 DATASETNAME
-#' @details TELL US MORE
+#' @source \href{https://www.vdh.virginia.gov/coronavirus/}{website}
+#' @keywords datasets coronavirus COVID19 Virginia
+#' @details This package includes tidy data of Virginia COVID-19 cases. 
 #'
-#' To get the latest data, use \code{\link{refresh_YOURPACKAGENAME}}
+#' To get the latest data, use \code{\link{refresh_VirginiaC19}}
 #' @examples
 #'
-#' data(DATASETNAME_demo)
+#' data(VirginiaC19_demo)
 #'
 #' #Show us something cool
 #' 
-"DATASETNAME_demo"
+"VirginiaC19_demo"
