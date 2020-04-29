@@ -15,9 +15,12 @@ globalVariables(
     "data_url",
     "license_url",
     "data_types",
-    "has_geospatial_info"
+    "has_geospatial_info",
 
     # unique to this dataset
+    "vdh_health_district",
+    "deaths",
+    "hospitalizations"
 
   )
 )

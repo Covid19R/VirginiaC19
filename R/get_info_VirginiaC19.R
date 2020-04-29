@@ -17,7 +17,7 @@
 #' @describeIn get_info_CanadaC19 Basic information about the dataset. 
 get_info_VirginiaC19 <- function() {
   latest_data <-
-    refresh_CanadaC19_cases(verbose = FALSE)
+    refresh_VirginiaC19(verbose = FALSE)
   
   dplyr::tibble(
     data_set_name = "VirginiaC19",
@@ -36,7 +36,7 @@ get_info_VirginiaC19 <- function() {
       tidyr::drop_na(location_type) %>%
       dplyr::pull(location_type) %>%
       unique(),
-    spatial_extent = "state",
+    spatial_extent = "county",
     has_geospatial_info = FALSE
   )
 }
