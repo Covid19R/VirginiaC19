@@ -25,6 +25,7 @@ Imports:
     stringr (>= 1.4.0),
     tidyr (>= 1.0.2),
     knitr,
-    tibble
+    tibble,
+    janitor
 Suggests:
     testthat (>= 2.3.1)
