@@ -25,7 +25,7 @@ get_info_VirginiaC19 <- function() {
     function_to_get_data = "refresh_VirginiaC19",
     data_details = "Open Source data from Virginia Department of Health. For more information, see https://www.vdh.virginia.gov/coronavirus/.",
     data_url = "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv",
-    license_url = "https://github.com/debusklaneml/CanadaC19/blob/master/LICENSE",
+    license_url = "https://github.com/debusklaneml/VirginiaC19/blob/master/LICENSE",
     data_types =
       latest_data %>%
       tidyr::drop_na(data_type) %>%
