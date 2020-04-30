@@ -14,7 +14,7 @@
 #'
 
 
-#' @describeIn get_info_CanadaC19 Basic information about the dataset. 
+#' @describeIn get_info_VirginiaC19 Basic information about the dataset. 
 get_info_VirginiaC19 <- function() {
   latest_data <-
     refresh_VirginiaC19(verbose = FALSE)

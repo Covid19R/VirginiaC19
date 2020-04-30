@@ -6,26 +6,28 @@ Authors@R:
            family = "DeBusk-Lane",
            role = c("aut", "cre"),
            email = "mldebusklane@gmail.com")
-Description: Imports and cleans data from Virginia's department of health reporting. The original website is here: <http://www.vdh.virginia.gov/coronavirus/>.
+Description: Imports and cleans data from Virginia's department
+    of health reporting. The original website is here:
+    <http://www.vdh.virginia.gov/coronavirus/>.
 License: MIT + file LICENSE
 URL: https://github.com/debusklaneml/VirginiaC19
 BugReports: https://github.com/debusklaneml/VirginiaC19/issues
 Depends:
     R (>= 3.0.2)
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
 Imports:
     dplyr (>= 0.8.5),
     glue (>= 1.3.2),
+    janitor,
+    knitr,
     lubridate (>= 1.7.4),
     magrittr (>= 1.5),
     readr (>= 1.3.1),
     stringr (>= 1.4.0),
-    tidyr (>= 1.0.2),
-    knitr,
     tibble,
-    janitor
+    tidyr (>= 1.0.2)
 Suggests:
     testthat (>= 2.3.1)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
