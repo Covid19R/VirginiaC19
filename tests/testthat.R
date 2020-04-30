@@ -1,4 +1,4 @@
 library(testthat)
-library(YOURPACKAGENAME)
+library(VirginiaC19)
 
-test_check("YOURPACKAGENAME")
+test_check("VirginiaC19")

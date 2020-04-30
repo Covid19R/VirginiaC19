@@ -1,4 +1,5 @@
-^YOUR_PACKAGE_NAME\.Rproj$
+^VirginiaC19\.Rproj$
+^covid19_package_template.Rproj
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
@@ -11,3 +12,5 @@ setupcode.R
 testcode.R
 ^\.travis\.yml$
 ^CRAN-RELEASE$
+^_pkgdown\.yml$
+^pkgdown$

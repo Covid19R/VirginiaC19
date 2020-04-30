@@ -12,12 +12,6 @@ NULL
 
 url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
 
-# iso.location <- data.frame(
-#   location_code = c("CA-AB", "CA-BC", "CA-MB", "CA-NB", "CA-NL", "CA-NS", "CA-ON", "CA-PE", "CA-QC", "CA-SK", "CA-NT", "CA-NU", "CA-YT"),
-#   location_code_type = "iso_3166_2",
-#   province = c("Alberta", "BC", "Monitoba", "New Brunswick", "NL", "Nova Scotia", "Ontario", "PEI", "Quebec", "Saskatchewan", "NWT", "Repatriated", "Yukon")
-# )
-
 read_data <- function() {
   suppressWarnings(
     readr::read_csv(
