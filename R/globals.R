@@ -12,7 +12,7 @@ globalVariables(
     "data_set_name",
     "package_name",
     "fips",
-    "locality", 
+    "locality",
     "total_cases",
     "function_to_get_data",
     "data_details",
@@ -25,6 +25,5 @@ globalVariables(
     "vdh_health_district",
     "deaths",
     "hospitalizations"
-
   )
 )

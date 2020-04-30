@@ -2,9 +2,9 @@
 #'
 #' @description Updates the Virginia COVID-19 cases.
 #'
-#' @details This package scrapes the state of Virginia reported cases. 
+#' @details This package scrapes the state of Virginia reported cases.
 #'
-#' @param verbose Should messages be displayed? 
+#' @param verbose Should messages be displayed?
 #'
 #' @source \href{https://github.com/debusklaneml/VirginiaC19}{VirginiaC19}
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
@@ -17,18 +17,16 @@
 #' * location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `XXXX`
 #' * data_type - the type of data in that given row using the covid19R controlled vocabulary. Includes WHAT DATA TYPES ARE HERE?
 #' * value - number of cases of each data type
-#' @export 
+#' @export
 #'
 #' @examples
 #' \dontrun{
 #' refresh_VirginiaC19()
 #' }
-
+#'
 refresh_VirginiaC19 <- function(verbose = TRUE) {
   if (verbose) message(glue::glue("Downloading raw data from {url}."))
-  
+
   read_data() %>%
     clean_data()
 }
-
-

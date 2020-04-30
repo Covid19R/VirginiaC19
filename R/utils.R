@@ -21,7 +21,7 @@ read_data <- function() {
           "Report Date" = readr::col_date(format = "%m/%d/%Y")
         )
     ) %>%
-    janitor::clean_names()
+      janitor::clean_names()
   )
 }
 
@@ -41,14 +41,14 @@ clean_data <- function(tbl) {
         location_type = "county",
         data_type = "cases_total",
         data_url = "https://www.vdh.virginia.gov/coronavirus/",
-        data_set_name = 'virginia_cases',
-        package_name = 'VirginiaC19',
-        function_to_get_data = 'refresh_VirginiaC19()',
+        data_set_name = "virginia_cases",
+        package_name = "VirginiaC19",
+        function_to_get_data = "refresh_VirginiaC19()",
         has_geospatial_info = FALSE,
-        location_code_type = 'fips_code'
+        location_code_type = "fips_code"
       ) %>%
       dplyr::arrange(
         date
-      ) 
+      )
   )
 }

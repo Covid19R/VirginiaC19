@@ -12,13 +12,11 @@
 #' get_info_VirginiaC19()
 #' }
 #'
-
-
-#' @describeIn get_info_VirginiaC19 Basic information about the dataset. 
+#' @describeIn get_info_VirginiaC19 Basic information about the dataset.
 get_info_VirginiaC19 <- function() {
   latest_data <-
     refresh_VirginiaC19(verbose = FALSE)
-  
+
   dplyr::tibble(
     data_set_name = "VirginiaC19",
     package_name = "VirginiaC19",
@@ -28,18 +26,15 @@ get_info_VirginiaC19 <- function() {
     license_url = "https://github.com/debusklaneml/VirginiaC19/blob/master/LICENSE",
     data_types =
       latest_data %>%
-      tidyr::drop_na(data_type) %>%
-      dplyr::pull(data_type) %>%
-      unique(),
+        tidyr::drop_na(data_type) %>%
+        dplyr::pull(data_type) %>%
+        unique(),
     location_types =
       latest_data %>%
-      tidyr::drop_na(location_type) %>%
-      dplyr::pull(location_type) %>%
-      unique(),
+        tidyr::drop_na(location_type) %>%
+        dplyr::pull(location_type) %>%
+        unique(),
     spatial_extent = "county",
     has_geospatial_info = FALSE
   )
 }
-
-
-

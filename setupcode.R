@@ -15,15 +15,15 @@ use_data_raw()
 # imports packages
 use_package("magrittr")
 use_package("tibble")
-use_package("PKG_TO_IMPORT")
+#use_package("PKG_TO_IMPORT")
 
 # suggests packages
-use_package("PKG_TO_SUGGEST", type = "Suggests")
+#use_package("PKG_TO_SUGGEST", type = "Suggests")
 
 
 # add other elements
 use_news_md()
-use_vignette("VIGNETTE_FILENAME", "VIGNETTE TITLE")
+#use_vignette("VIGNETTE_FILENAME", "VIGNETTE TITLE")
 
 
 #-----------------------------
@@ -36,7 +36,7 @@ use_tidy_versions()
 
 # Are there things you should cleanup in this package?
 styler::style_dir("R")
-styler::style_dir("data-raw") #can comment out if not including local data
+#styler::style_dir("data-raw") #can comment out if not including local data
 goodpractice::gp()
 
 # make a pkgdown website!
