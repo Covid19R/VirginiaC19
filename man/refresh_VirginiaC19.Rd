@@ -36,4 +36,5 @@ This package scrapes the state of Virginia reported cases.
 \dontrun{
 refresh_VirginiaC19()
 }
+
 }

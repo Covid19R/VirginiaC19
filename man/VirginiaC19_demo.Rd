@@ -25,8 +25,7 @@ To get the latest data, use \code{\link{refresh_VirginiaC19}}
 
 data(VirginiaC19_demo)
 
-#Show us something cool
-
+# Show us something cool
 }
 \keyword{COVID19}
 \keyword{Virginia}
