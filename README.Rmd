@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis build status](https://travis-ci.com/debusklaneml/VirginiaC19.svg?branch=master)](https://travis-ci.com/debusklaneml/VirginiaC19)
+
 ## VirginiaC19
 
 The VirginiaC19 package harvests the data from the [Virginia Department of Health](https://www.vdh.virginia.gov/coronavirus/). This package is currently a component to the [Covid19R project](https://github.com/Covid19R). 
