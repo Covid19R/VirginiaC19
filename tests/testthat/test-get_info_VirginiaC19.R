@@ -9,7 +9,7 @@ info_col_names <-
     "data_types",
     "location_types",
     "spatial_extent",
-    "has_geospatial_info"
+    "has_geospatial_info" 
   )
 
 test_that("get_info works", {
@@ -18,3 +18,5 @@ test_that("get_info works", {
   expect_named(info, info_col_names)
   
 })
+
+ 
