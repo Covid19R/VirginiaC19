@@ -15,19 +15,19 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 read_data <- function() {
   suppressWarnings(
     readr::read_csv(
-      "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv",
+      url,
       col_types =
         readr::cols(
           "Report Date" = readr::col_date(format = "%m/%d/%Y")
         )
-    ) %>%
-      janitor::clean_names()
+    ) 
   )
 }
 
 clean_data <- function(tbl) {
   suppressWarnings(
     tbl %>%
+      janitor::clean_names() %>%
       dplyr::select(
         date = report_date,
         location_code = fips,
