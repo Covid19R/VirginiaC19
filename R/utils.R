@@ -15,7 +15,7 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 read_data <- function() {
   suppressWarnings(
     readr::read_csv(
-      url,
+      file = url,
       col_types =
         readr::cols(
           "Report Date" = readr::col_date(format = "%m/%d/%Y")

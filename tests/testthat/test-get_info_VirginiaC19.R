@@ -18,5 +18,3 @@ test_that("get_info works", {
   expect_named(info, info_col_names)
   
 })
-
- 
