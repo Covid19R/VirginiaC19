@@ -1,5 +1,5 @@
 Package: VirginiaC19
-Title: Virignia COVID-19 Related Data
+Title: Virginia COVID-19 Related Data
 Version: 0.1.0
 Authors@R: 
     person(given = "Les",

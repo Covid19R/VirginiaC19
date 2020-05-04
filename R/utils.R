@@ -24,31 +24,31 @@ read_data <- function() {
  )
 }
 
-# clean_data <- function(tbl) {
-#   suppressWarnings(
-#     tbl %>%
-#       janitor::clean_names() %>%
-#       dplyr::select(
-#         date = report_date,
-#         location_code = fips,
-#         location = locality,
-#         vdh_health_district,
-#         value = total_cases,
-#         deaths,
-#         hospitalizations
-#       ) %>%
-#       dplyr::mutate(
-#         location_type = "county",
-#         data_type = "cases_total",
-#         data_url = "https://www.vdh.virginia.gov/coronavirus/",
-#         data_set_name = "virginia_cases",
-#         package_name = "VirginiaC19",
-#         function_to_get_data = "refresh_VirginiaC19()",
-#         has_geospatial_info = FALSE,
-#         location_code_type = "fips_code"
-#       ) %>%
-#       dplyr::arrange(
-#         date
-#       )
-#   )
-# }
+clean_data <- function(tbl) {
+  suppressWarnings(
+    tbl %>%
+      janitor::clean_names() %>%
+      dplyr::select(
+        date = report_date,
+        location_code = fips,
+        location = locality,
+        vdh_health_district,
+        value = total_cases,
+        deaths,
+        hospitalizations
+      ) %>%
+      dplyr::mutate(
+        location_type = "county",
+        data_type = "cases_total",
+        data_url = "https://www.vdh.virginia.gov/coronavirus/",
+        data_set_name = "virginia_cases",
+        package_name = "VirginiaC19",
+        function_to_get_data = "refresh_VirginiaC19()",
+        has_geospatial_info = FALSE,
+        location_code_type = "fips_code"
+      ) %>%
+      dplyr::arrange(
+        date
+      )
+  )
+}
