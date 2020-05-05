@@ -18,11 +18,11 @@ refresh_VirginiaC19(verbose = TRUE)
 A tibble object
 \itemize{
 \item date - The date in YYYY-MM-DD form
-\item location - The name of the location as provided by the data source. XXXXX
-\item location_type - The type of location using the covid19R controlled vocabulary. SAY MORE ABOUT THIS
-\item location_code - A standardized location code using a national or international standard. ADD MORE
-\item location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use \code{XXXX}
-\item data_type - the type of data in that given row using the covid19R controlled vocabulary. Includes WHAT DATA TYPES ARE HERE?
+\item location - The name of the location as provided by the data source.
+\item location_type - The type of location using the covid19R controlled vocabulary.
+\item location_code - A standardized location code using a national or international standard.
+\item location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary.
+\item data_type - the type of data in that given row using the covid19R controlled vocabulary. Daily totals are found here.
 \item value - number of cases of each data type
 }
 }
