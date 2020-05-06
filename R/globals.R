@@ -26,4 +26,4 @@ globalVariables(
     "deaths",
     "hospitalizations"
   )
-) 
+)

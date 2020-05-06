@@ -11,7 +11,7 @@
 NULL
 
 url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
-#Original
+# Original
 # read_data <- function() {
 #   suppressWarnings(
 #     readr::read_csv(
@@ -20,21 +20,20 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 #         readr::cols(
 #           "Report Date" = readr::col_date(format = "%m/%d/%Y")
 #         )
-#     ) 
+#     )
 #  )
 # }
 
 
 
-#Trying different way. 
+# Trying different way.
 read_data <- function() {
   suppressWarnings(
-    readr::read_csv(url
-             ) 
+    readr::read_csv(url)
   )
 }
 
-#need to change the date into a date variable.
+# need to change the date into a date variable.
 clean_data <- function(tbl) {
   suppressWarnings(
     tbl %>%
