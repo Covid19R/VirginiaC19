@@ -10,7 +10,7 @@ status](https://travis-ci.com/debusklaneml/VirginiaC19.svg?branch=master)](https
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub
-commit](https://img.shields.io/github/commit-activity/m/debusklaneml/VirginiaC19)](https://github.com/debusklaneml/VirginiaC19/commit/master)
+commit](https://img.shields.io/github/last-commit/debusklaneml/VirginiaC19)](https://github.com/debusklaneml/VirginiaC19/commit/master)
 
 <!--badges: end -->
 
