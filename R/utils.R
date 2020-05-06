@@ -29,11 +29,12 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 #Trying different way. 
 read_data <- function() {
   suppressWarnings(
-    readr::read_csv("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
+    readr::read_csv(url
              ) 
   )
 }
 
+#need to change the date into a date variable.
 clean_data <- function(tbl) {
   suppressWarnings(
     tbl %>%
@@ -59,6 +60,7 @@ clean_data <- function(tbl) {
       ) %>%
       dplyr::arrange(
         date
-      )
+      ) %>%
+      dplyr::mutate(date = lubridate::mdy(date))
   )
 }

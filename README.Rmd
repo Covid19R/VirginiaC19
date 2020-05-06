@@ -13,17 +13,21 @@ knitr::opts_chunk$set(
 )
 ```
 
+ <!--badges: start -->
+ 
 [![Travis build status](https://travis-ci.com/debusklaneml/VirginiaC19.svg?branch=master)](https://travis-ci.com/debusklaneml/VirginiaC19)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/VirginiaC19)](https://cran.r-project.org/package=VirginiaC19)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub commit](https://img.shields.io/github/commit-activity/m/debusklaneml/VirginiaC19)](https://github.com/debusklaneml/VirginiaC19/commit/master)
+
+ <!--badges: end -->
+
+
 
 ## VirginiaC19
 
 The VirginiaC19 package harvests the data from the [Virginia Department of Health](https://www.vdh.virginia.gov/coronavirus/). This package is currently a component to the [Covid19R project](https://github.com/Covid19R). 
-
-## Installation (once on CRAN)
-
-``` {r install, eval=FALSE}
-install.packages("CanadaC19")
-```
 
 Get the latest development version from [github](https://github.com/debusklaneml/VirginiaC19)
 

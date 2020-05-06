@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pipe operator — %&gt;% • VirginiaC19</title>
+<title>Get information about the dataset provided by VirginiaC19 package. — get_info_VirginiaC19 • VirginiaC19</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Pipe operator — %&gt;%" />
-<meta property="og:description" content="See magrittr::%&amp;gt;% for details." />
+<meta property="og:title" content="Get information about the dataset provided by VirginiaC19 package. — get_info_VirginiaC19" />
+<meta property="og:description" content="Returns information about the datasets in this package for covid19R harvesting." />
 
 
 
@@ -111,19 +111,34 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Pipe operator</h1>
-    <small class="dont-index">Source: <a href='https://github.com/debusklaneml/VirginiaC19/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
-    <div class="hidden name"><code>pipe.Rd</code></div>
+    <h1>Get information about the dataset provided by VirginiaC19 package.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/debusklaneml/VirginiaC19/blob/master/R/get_info_VirginiaC19.R'><code>R/get_info_VirginiaC19.R</code></a></small>
+    <div class="hidden name"><code>get_info_VirginiaC19.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>See <code>magrittr::%&gt;%</code> for details.</p>
+    <p>Returns information about the datasets in this package for covid19R harvesting.</p>
     </div>
 
-    <pre class="usage"><span class='no'>lhs</span> <span class='kw'>%&gt;%</span> <span class='no'>rhs</span></pre>
+    <pre class="usage"><span class='fu'>get_info_VirginiaC19</span>()</pre>
 
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>a tibble of information about the datasets in this package.</p>
+    <h2 class="hasAnchor" id="functions"><a class="anchor" href="#functions"></a>Functions</h2>
+
+    
+<ul>
+<li><p><code>get_info_VirginiaC19</code>: Basic information about the dataset.</p></li>
+</ul>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+
+<span class='co'># get the dataset info from this package</span>
+<span class='fu'>get_info_VirginiaC19</span>()
+}</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
