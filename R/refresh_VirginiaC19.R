@@ -10,7 +10,7 @@
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
 #'
 #' @return A tibble object
-#' * date - The date in YYYY-MM-DD form
+#' * date - The date in 'YYYY-MM-DD' format
 #' * location - The name of the location as provided by the data source.
 #' * location_type - The type of location using the covid19R controlled vocabulary.
 #' * location_code - A standardized location code using a national or international standard.

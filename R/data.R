@@ -1,4 +1,4 @@
-#' Demo of VirginiaC19 cases data.
+#' VirginiaC19 cases data.
 #'
 #' @description daily summary of Virginia Coronavirus (COVID-19) cases.
 #'
@@ -11,7 +11,7 @@
 #' To get the latest data, use \code{\link{refresh_VirginiaC19}}
 #' @examples
 #'
-#' data(VirginiaC19_demo)
+#' data(VirginiaC19)
 #'
 #' # Show us something cool
-"VirginiaC19_demo"
+"VirginiaC19"

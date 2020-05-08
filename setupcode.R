@@ -31,8 +31,7 @@ use_news_md()
 #-----------------------------
 
 # tweaks to the description before release
-use_tidy_description()
-use_tidy_versions()
+usethis::use_tidy_description()
 
 # Are there things you should cleanup in this package?
 styler::style_dir("R")
