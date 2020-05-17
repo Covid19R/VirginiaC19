@@ -20,6 +20,7 @@ Imports:
     janitor,
     lubridate,
     magrittr (>= 1.5),
+    readr,
     tidyr (>= 1.0.2)
 Suggests:
     testthat (>= 2.3.1)
