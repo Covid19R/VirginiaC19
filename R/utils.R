@@ -28,7 +28,7 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 # Trying different way.
 read_data <- function() {
   suppressWarnings(
-    utils::read.csv(url("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases.csv"))
+    data.table::fread("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases.csv")
   )
 }
 
