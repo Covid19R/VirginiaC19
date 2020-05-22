@@ -21,7 +21,6 @@ Imports:
     janitor,
     lubridate,
     magrittr (>= 1.5),
-    RCurl,
     readr,
     tidyr (>= 1.0.2)
 Suggests:
