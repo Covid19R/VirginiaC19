@@ -7,7 +7,7 @@ test_that(desc = "Test the dates", {
 
 test_that(desc = "Test the structure", {
   
-  expect_equal(base::ncol(VirginiaC19) == 15, TRUE)
+  expect_equal(base::ncol(VirginiaC19) == 13, TRUE)
   
 })
 
@@ -22,5 +22,5 @@ test_that(desc = "Test refresh function", {
   
   info <- refresh_VirginiaC19()
   
-  expect_equal(base::ncol(info) == 15, TRUE)
+  expect_equal(base::ncol(info) == 13, TRUE)
 })
