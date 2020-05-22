@@ -39,13 +39,12 @@ clean_data <- function(tbl) {
         location_code = fips,
         location = locality,
         vdh_health_district,
-        value = total_cases,
-        deaths,
-        hospitalizations
+        cases_new = total_cases,
+        deaths_new = deaths,
+        hosp_new = hospitalizations
       ) %>%
       dplyr::mutate(
         location_type = "county",
-        data_type = "cases_total",
         data_url = "https://www.vdh.virginia.gov/coronavirus/",
         data_set_name = "virginia_cases",
         package_name = "VirginiaC19",
@@ -56,6 +55,11 @@ clean_data <- function(tbl) {
       dplyr::arrange(
         date
       ) %>%
-      dplyr::mutate(date = lubridate::mdy(date))
+      dplyr::mutate(date = lubridate::mdy(date)) %>%
+      tidyr::pivot_longer(
+        cols = cases_new:hosp_new,
+        names_to = "data_type",
+        values_to = "value"
+      )
   )
 }
