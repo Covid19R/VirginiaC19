@@ -50,6 +50,7 @@ read_data <- function() {
   )
 }
 
+
 # need to change the date into a date variable.
 clean_data <- function(tbl) {
   suppressWarnings(
