@@ -16,12 +16,12 @@ Depends:
     R (>= 3.0.2)
 Imports:
     curl,
-    data.table,
     dplyr (>= 0.8.5),
     glue (>= 1.3.2),
     janitor,
     lubridate,
     magrittr (>= 1.5),
+    readr,
     tidyr (>= 1.0.2)
 Suggests:
     testthat (>= 2.3.1)

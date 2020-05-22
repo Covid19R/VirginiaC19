@@ -10,7 +10,7 @@
 #' @usage lhs \%>\% rhs
 NULL
 
-url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
+# url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
 # Original
 # read_data <- function() {
 #   suppressWarnings(
@@ -26,9 +26,27 @@ url <- "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID
 
 
 # Trying different way.
+# read_data <- function() {
+#   suppressWarnings(
+#     data.table::fread("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases.csv")
+#   )
+# }
+
 read_data <- function() {
   suppressWarnings(
-    data.table::fread("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases.csv")
+    readr::read_csv(
+      "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases.csv",
+      col_types =
+        readr::cols(
+          `Report Date` = readr::col_character(),
+          FIPS = readr::col_double(),
+          Locality = readr::col_character(),
+          `VDH Health District` = readr::col_character(),
+          `Total Cases` = readr::col_double(),
+          Hospitalizations = readr::col_double(),
+          Deaths = readr::col_double()
+        )
+    )
   )
 }
 

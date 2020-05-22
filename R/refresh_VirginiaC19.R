@@ -25,7 +25,7 @@
 #' }
 #'
 refresh_VirginiaC19 <- function(verbose = TRUE) {
-  if (verbose) message(glue::glue("Downloading raw data from {url}."))
+  if (verbose) message(glue::glue("Downloading raw data."))
 
   read_data() %>%
     clean_data()
