@@ -20,6 +20,8 @@ globalVariables(
     "license_url",
     "data_types",
     "has_geospatial_info",
+    "cases_new",
+    "hosp_new",
 
     # unique to this dataset
     "vdh_health_district",
