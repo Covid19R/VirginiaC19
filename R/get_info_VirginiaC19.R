@@ -16,7 +16,7 @@
 get_info_VirginiaC19 <- function() {
   latest_data <-
     refresh_VirginiaC19(verbose = FALSE)
-
+  
   dplyr::tibble(
     data_set_name = "VirginiaC19",
     package_name = "VirginiaC19",
@@ -26,15 +26,17 @@ get_info_VirginiaC19 <- function() {
     license_url = "https://github.com/debusklaneml/VirginiaC19/blob/master/LICENSE",
     data_types =
       latest_data %>%
-        tidyr::drop_na(data_type) %>%
-        dplyr::pull(data_type) %>%
-        unique(),
+      tidyr::drop_na(data_type) %>%
+      dplyr::pull(data_type) %>%
+      unique() %>%
+      paste0(collapse = ","),
     location_types =
       latest_data %>%
-        tidyr::drop_na(location_type) %>%
-        dplyr::pull(location_type) %>%
-        unique(),
-    spatial_extent = "county",
+      tidyr::drop_na(location_type) %>%
+      dplyr::pull(location_type) %>%
+      unique()%>%
+      paste0(collapse = ","),
+    spatial_extent = "state",
     has_geospatial_info = FALSE
   )
 }
